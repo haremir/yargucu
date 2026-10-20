@@ -1,0 +1,22 @@
+data:
+  raw_path: "data/raw/adult.data"
+  test_path: "data/raw/adult.test"
+  processed_path: "data/processed/adult_processed.csv"
+  target_column: "income"
+
+split:
+  test_size: 0.2
+  random_state: 42
+
+tree:
+  max_depth: 5
+  min_samples_split: 2
+  min_samples_leaf: 1
+  criterion: "entropy"  # "entropy" veya "gini"
+
+random_state: 42
+
+output:
+  figures_dir: "outputs/figures"
+  tables_dir: "outputs/tables"
+  logs_dir: "outputs/logs"
