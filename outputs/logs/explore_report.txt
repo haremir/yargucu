@@ -1,0 +1,57 @@
+============================================================
+UCI ADULT INCOME VERİ KEŞİF RAPORU (EXPLORATION REPORT)
+============================================================
+
+1. VERİ BOYUTU:
+   - Toplam Satır Sayısı: 32,561
+   - Toplam Sütun Sayısı: 15
+
+2. SÜTUN VERİ TİPLERİ (DTYPES):
+   - age             : int64
+   - workclass       : str
+   - fnlwgt          : int64
+   - education       : str
+   - education-num   : int64
+   - marital-status  : str
+   - occupation      : str
+   - relationship    : str
+   - race            : str
+   - sex             : str
+   - capital-gain    : int64
+   - capital-loss    : int64
+   - hours-per-week  : int64
+   - native-country  : str
+   - income          : str
+
+3. EKSİK DEĞER (NaN) ANALİZİ:
+   - workclass       : 1,836 adet (%5.64)
+   - occupation      : 1,843 adet (%5.66)
+   - native-country  : 583 adet (%1.79)
+
+4. HEDEF DEĞİŞKEN (INCOME) SINIF DAĞILIMI:
+        Count  Percentage (%)
+income                       
+<=50K   24720           75.92
+>50K     7841           24.08
+
+5. KATEGORİK SÜTUNLARIN BENZERSİZ DEĞER SAYILARI (NUNIQUE):
+   - workclass       :  8 tekil değer (Örnek: State-gov, Self-emp-not-inc, Private, Federal-gov...)
+   - education       : 16 tekil değer (Örnek: Bachelors, HS-grad, 11th, Masters...)
+   - marital-status  :  7 tekil değer (Örnek: Never-married, Married-civ-spouse, Divorced, Married-spouse-absent...)
+   - occupation      : 14 tekil değer (Örnek: Adm-clerical, Exec-managerial, Handlers-cleaners, Prof-specialty...)
+   - relationship    :  6 tekil değer (Örnek: Not-in-family, Husband, Wife, Own-child...)
+   - race            :  5 tekil değer (Örnek: White, Black, Asian-Pac-Islander, Amer-Indian-Eskimo...)
+   - sex             :  2 tekil değer (Örnek: Male, Female...)
+   - native-country  : 41 tekil değer (Örnek: United-States, Cuba, Jamaica, India...)
+   - income          :  2 tekil değer (Örnek: <=50K, >50K...)
+
+6. SAYISAL SÜTUNLARIN TEMEL İSTATİSTİKLERİ (DESCRIBE):
+                  count           mean            std      min       50%        max
+age             32561.0      38.581647      13.640433     17.0      37.0       90.0
+fnlwgt          32561.0  189778.366512  105549.977697  12285.0  178356.0  1484705.0
+education-num   32561.0      10.080679       2.572720      1.0      10.0       16.0
+capital-gain    32561.0    1077.648844    7385.292085      0.0       0.0    99999.0
+capital-loss    32561.0      87.303830     402.960219      0.0       0.0     4356.0
+hours-per-week  32561.0      40.437456      12.347429      1.0      40.0       99.0
+
+============================================================
