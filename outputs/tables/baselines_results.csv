@@ -1,0 +1,5 @@
+model,split,accuracy,precision,recall,f1,train_time_sec
+Sklearn Decision Tree,train,0.7992,0.5555,0.8322,0.6662,0.0955
+Sklearn Decision Tree,test,0.7941,0.5425,0.8196,0.6529,0.0955
+XGBoost,train,0.8387,0.6138,0.891,0.7268,0.1754
+XGBoost,test,0.8285,0.5934,0.8703,0.7057,0.1754

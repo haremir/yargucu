@@ -1,0 +1,4 @@
+Model,Accuracy (%),Precision (%),Recall (%),F1-Score,Train Time (s)
+Manual Decision Tree,79.51,54.4,82.06,0.6542,1.604
+Sklearn Decision Tree,79.41,54.25,81.96,0.6529,0.096
+XGBoost,82.85,59.34,87.03,0.7057,0.175
